@@ -1,0 +1,1 @@
+console.log('Scripts da página ok!');
