@@ -26,3 +26,22 @@ footer{
     background: #000;
     color:#fff;
 }
+
+table{
+    width: 60%;
+    margin: auto;
+}
+table thead th{
+    background: #000;
+    color: #fff;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+table tbody tr:nth-child(even){
+    background: #fff;
+}
+table tbody td{
+    text-align: center;
+    padding: 0.5em 0;
+}
