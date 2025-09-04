@@ -1,5 +1,5 @@
 import { PersonRepository } from "./person-respository.js";
-import { Person } from "./person.js";
+import { Person } from "./person-model.js";
 
 class PersonController {
     constructor() {
