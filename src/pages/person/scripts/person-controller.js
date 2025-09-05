@@ -1,9 +1,9 @@
-import { PersonRepository } from "./person-respository.js";
+import { PersonRepositoryApi } from "./person-respository-api.js";
 import { Person } from "./person-model.js";
 
 class PersonController {
     constructor() {
-        this.repository = new PersonRepository();
+        this.repository = new PersonRepositoryApi();
     }
     bindForm(){
         let formEl = document.querySelector('form')
@@ -20,11 +20,12 @@ class PersonController {
         let person = new Person(firstName, lastName, birthDate)
         this.repository.create(person);       
     }
-    bindTable(){
+    async bindTable(){
         let table = document.querySelector('table');
         if(table){
             let tbody = table.querySelector('tbody');
-            let list = this.getAll();
+            let list = await this.getAll();            
+            console.log(list);
             if(list){
                 tbody.innerHTML = ''; 
                 list.forEach(function(person) {
@@ -38,8 +39,8 @@ class PersonController {
             }
         }
     }
-    getAll() {
-        return this.repository.getAll();
+    async getAll() {
+        return await this.repository.getAll();
     }
 }
 
