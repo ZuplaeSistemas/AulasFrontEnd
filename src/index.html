@@ -3,6 +3,14 @@
         <title>Zuplae - Home</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script type="module">
+            import { AuthStorage } from './pages/scripts/auth-storage.js'
+            let authStorage = new AuthStorage()
+            if (!authStorage.isAuthenticated()) {
+                const returnUrl = encodeURIComponent(window.location.href);
+                window.location.href = `pages/auth/auth-login/auth-login.html?returnUrl=${returnUrl}`;
+            }
+        </script>
     </head>
     <body>
         <header>
