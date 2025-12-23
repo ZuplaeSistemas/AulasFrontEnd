@@ -1,0 +1,35 @@
+{
+  "name": "aulasfrontend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "front-end de autenticacao e criacao de pessoas/usuarios",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuplaeSistemas/AulasFrontEnd.git"
+  },
+  "author": "Maykon Granemann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZuplaeSistemas/AulasFrontEnd/issues"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
